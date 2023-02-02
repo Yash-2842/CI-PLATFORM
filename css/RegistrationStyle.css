@@ -8,12 +8,6 @@
     display: flex;
 }
 
-.carousel-indicators button{
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50%;
-}
-
 #subcontainer{
     display: flex;
     width: 30%;
@@ -23,6 +17,12 @@
 .carousel{
     width: 70% !important;
 } 
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
 
 .btn{
     width: 100%;
@@ -37,9 +37,25 @@
     margin: auto;
 }
 
-#login{
+#lostpass{
+    margin: 10px auto;
     text-align: center;
-    margin-top: 5px;
+    font-size: 15px;
+}
+
+#lostpass a{
+    color: gainsboro;
+}
+
+#createAcc{
+    margin: 0px auto;
+    color: gainsboro;
+    font-size: 15px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 #policy{
@@ -51,26 +67,6 @@
 
 .carousel-item img{
     height: 100vh;
-}
-
-h4{
-    text-align: center;
-}
-
-#text{
-    font-size: 12px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-button{
-    margin-top: 10px;
-}
-
-#login a{
-    text-decoration: none;
-    color: #000;
 }
 
 @media screen and (max-width:1000px) {

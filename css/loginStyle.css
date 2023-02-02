@@ -18,6 +18,12 @@
     width: 70% !important;
 } 
 
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
 .btn{
     width: 100%;
     background-color: white;
