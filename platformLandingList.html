@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/platformlandingList.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-light border-bottom">
+        <div class="container-fluid mx-auto">
+          <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" id="navbarSupportedContent" tabindex="-1">
+            <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </a>
+                <ul class="dropdown-menu dropdown-border">
+                  <li><a class="dropdown-item" href="#">Policy</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Stories</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Policy
+                </a>
+                <ul class="dropdown-menu dropdown-border">
+                  <li><a class="dropdown-item" href="#">Policy</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="dropdown mx-5" id="prof-drop">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Images\user-img.png" class="rounded-circle" alt="profile">
+            <span id="hide">Evan Donohue</span> 
+          </a>
+          <ul class="dropdown-menu" id="drop-pos">
+            <li><a class="dropdown-item" href="#">Policy</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+    </div>
+    <div class="container-fluid border-bottom navbar-expand-md">
+      <div class="row mx-5 d-flex justify-content-between">
+              <div class="d-flex col-11 col-md-4" role="search">
+              <img src="Images\search.png" alt="search-icon" class="position-absolute pt-3 ps-1">
+              <input class="form-control me-2 ps-5 pt-3 pb-3" id="search-border" type="search" placeholder="Search" aria-label="Search">
+              </div>
+              <button class="navbar-toggler col-1"  type="button" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><img src="./Images/filter.png" alt=""></span>
+              </button>
+              <div id="filter" class = "offcanvas offcanvas-start d-flex flex-row col-md-8" tabindex="-1">
+                  <li class="list-group-item  dropdown border-start col-md-3 border-end pt-3 pb-3 noborder">
+                      <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Country
+                          </a>
+                      <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Default
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                      </ul>
+      
+                  </li>
+                  <li class="list-group-item dropdown col-md-3 border-end pt-3 pb-3 noborder">
+                      <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          City
+                          </a>
+                      <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Default
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                      </ul>
+                  </li>
+                  <li class="list-group-item dropdown col-md-3 border-end pt-3 pb-3 noborder">
+                      <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Theme
+                          </a>
+                      <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Default
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                      </ul>
+                  </li>
+                  <li class="list-group-item dropdown border-end col-md-3 pt-3 pb-3 noborder">
+                      <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Skills
+                          </a>
+                      <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Default
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                          <div class="form-check ms-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                           Checked
+                                       </label>
+                          </div>
+                      </ul>
+                  </li>
+              </div>
+      </div>
+  </div>
+    <div class="d-flex mt-4 mx-5 justify-content-between" id="gridList">
+        <h3 class="ms-3" >Explore 72 missions</h3>
+        <div class="d-flex mx-3">
+          <select class="form-select mx-2 pe-5" aria-label="Default select example">
+            <option selected>Sort by</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <a class="border-0 btn" href="/platformLanding.html"><img src="Images\grid.png" alt="grid"></a>
+          <a class="border-0 btn px-0" href="/platformLandingList.html"><img src="Images\list.png" alt="list"></a>  
+        </div>
+    </div>
+    <div class="container">
+<!-- 1 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="Images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="theme p-1">Environment</span>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Grow Trees - On the path to environment sustainability</h5>
+                  <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                  <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                 </div>
+
+                 <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                              <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                              <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                  <span class="fs-6 mb-0">09/01/2019</span>
+                                  <p class="m-0">Deadline</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- 2 -->
+
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="imgTitle p-1">Children</span>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                </div>
+
+                <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                            <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                            <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                            </div>
+                            </div>
+                            <div>
+                            <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                <span class="fs-6 mb-0">09/01/2019</span>
+                                <p class="m-0">Deadline</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- 3 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Images/Nourish-the-Children-in--African-country-1.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="imgTitle">Nutrition</span>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Nourish the Children in African country</h5>
+                <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                </div>
+
+                <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                            <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                            <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                            </div>
+                            </div>
+                            <div>
+                            <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                <span class="fs-6 mb-0">09/01/2019</span>
+                                <p class="m-0">Deadline</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- 4 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="theme p-1">Environment</span>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h5>
+                <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                </div>
+
+                <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                            <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                            <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                            </div>
+                            </div>
+                            <div>
+                            <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                <span class="fs-6 mb-0">09/01/2019</span>
+                                <p class="m-0">Deadline</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- 5 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Images/Animal-welfare-&-save-birds-campaign-1.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="imgTitle p-1">Animals</span>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Animal welfare & save birds campaign</h5>
+                <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                </div>
+
+                <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                            <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                            <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                            </div>
+                            </div>
+                            <div>
+                            <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                <span class="fs-6 mb-0">09/01/2019</span>
+                                <p class="m-0">Deadline</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- 6 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="Images/Plantation-and-Afforestation-programme-1.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="imgTitle p-1">health</span>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Plantation and Afforestation programme</h5>
+                  <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                  <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                 </div>
+
+                 <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                              <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                              <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                  <span class="fs-6 mb-0">09/01/2019</span>
+                                  <p class="m-0">Deadline</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+<!-- 7 -->
+        <div class="card mb-3 mt-3" >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="Images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="img-fluid rounded-start" alt="..." style="height: 100%; width: 100%;">
+                <span class="theme p-1">Environment</span>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Grow Trees - On the path to environment sustainability</h5>
+                  <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit, labore eos hic suscipit modi atque architecto nemo iusto! Ipsa dolorem possimus maxime ea animi tempora dolores perspiciatis iusto alias.</p>
+                  <div class="card-text row1">
+                        <div class="star-txt">
+                            <span>Tree Canada</span>
+                            <div>
+                                <img src="Images/selected-star.png" alt="selectedstar" class="pb-1 star star-margin">
+                                <img src="Images/selected-star.png" alt="selectedstar" class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                                <img src="Images/selected-star.png" alt="selectedstar"class="star pb-1">
+                            </div>
+                        </div>
+                        <span class="border border-secondary datec py-2  px-3">From 10/12/2019 until 25/02/2020</span>
+                 </div>
+
+                 <div class="card-text pt-4 row2">
+                        <div>
+                            <button class=" border px-3 py-2 app" style="background-color: white;"> Apply<img src="Images/right-arrow.png" alt="" class=" arrow ms-2"></button>
+                        </div>
+                        <div class="d-flex justify-content-between mx-2 pro">
+                            <div class="d-flex">
+                              <img class="img1 mt-2 me-2" src="Images/Seats-left.png" alt="Seats-left">
+                              <div>
+                                <span class="fs-6 mb-0">10</span>
+                                <p class="m-0">Seats left</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="d-flex ps-3">
+                                <img class="img1 mt-2 me-2" src="Images/hours.png" alt="Seats-left">
+                                <div>
+                                  <span class="fs-6 mb-0">09/01/2019</span>
+                                  <p class="m-0">Deadline</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <nav aria-label="Page navigation example" class="d-flex mt-4">
+      <ul class="pagination mx-auto">
+        <li class="page-item me-2">
+          <a class="page-link" href="#" aria-label="Previous">
+            <img src="./Images/previous.png" alt="">
+          </a>
+        </li>
+        <li class="page-item me-2">
+          <a class="page-link" href="#" aria-label="Previous">
+            <img src="./Images/left.png" alt="">
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link me-2 text-secondary" href="#">1</a></li>
+        <li class="page-item"><a class="page-link me-2 text-secondary" href="#">2</a></li>
+        <li class="page-item"><a class="page-link me-2 text-secondary" href="#">3</a></li>
+        <li class="page-item me-2">
+          <a class="page-link" href="#" aria-label="Previous">
+            <img src="./Images/right-arrow1.png" alt="">
+          </a>
+        </li>
+        <li class="page-item me-2">
+          <a class="page-link" href="#" aria-label="Next">
+            <img src="./Images/next.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>    
+</body>
+</html>
