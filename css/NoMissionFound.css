@@ -1,0 +1,61 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown a img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #prof-drop{
+        position: absolute;
+        right: 5px;
+        top: 3px;
+    }
+
+    #search-border{
+        border: none;
+    }
+
+    #navbarSupportedContent{
+        width:240px;
+    }
+
+    #filter{
+        width: 240px;
+    }
+
+    .subNewMission{
+        border: 2px solid orange; 
+        border-radius: 20px;
+        color: orange;
+        background-color: white;
+    }
+
+    @media screen and (max-width:768px) {
+        #filter{
+            flex-direction: column !important;
+        }  
+        .drop{
+            position: static !important;
+            transform: unset !important;
+        }
+        .noborder{
+            border: none !important;
+        }  
+    }
+
+    @media  only screen and (max-width:575px) {
+        #hide{
+            display: none;
+        }
+        #drop-pos{
+            left: -62px;
+        }    
+        .dropdown-border{
+            border: none;
+        }
+
+
+    }
