@@ -1,12 +1,27 @@
 function showList(e) {
     var $gridCont = $('.grid-container');
+    var $cardstart = $('.card-start');
+    var $grid_element = $('.grid-element');
     e.preventDefault();
-    $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+    $gridCont.addClass('list-view');
+    // $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+    $cardstart.removeClass('d-none');
+    $cardstart.addClass('d-flex');
+    $grid_element.removeClass('d-flex');
+    $grid_element.addClass('d-none');
+
+
   }
   function gridList(e) {
-    var $gridCont = $('.grid-container')
+    var $gridCont = $('.grid-container');
+    var $cardstart = $('.card-start');
+    var $grid_element = $('.grid-element');
     // e.preventDefault();
     $gridCont.removeClass('list-view');
+    $cardstart.addClass('d-flex');
+    $cardstart.addClass('d-none');
+    $grid_element.removeClass('d-none');
+    $grid_element.addClass('d-flex');
   }
   
   $(document).on('click', '.btn-grid', gridList);
@@ -16,7 +31,7 @@ function showList(e) {
 
 var checkboxes = document.querySelectorAll(".checkbox");
 
-
+console.log(checkboxes.length)
 let filtersSection = document.querySelector(".filters-section");
 
 var listArray = [];

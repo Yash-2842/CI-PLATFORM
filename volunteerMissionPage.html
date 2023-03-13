@@ -102,7 +102,7 @@
                                 USA
                             </label>
                         </div>
-                        <div class="form-check ms-3">
+                        <div class="for m-check ms-3">
                             <input class="form-check-input checkbox" type="checkbox" value="Canada"
                                 id="flexCheckDefault3">
                             <label class="form-check-label" for="flexCheckDefault">
@@ -867,8 +867,10 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length)
+   {slideIndex = 1}
+  if (n < 1)
+   {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
